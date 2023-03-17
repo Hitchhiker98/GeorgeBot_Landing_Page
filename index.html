@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GeorgeBot</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <section class="home" id="home">
+      <header>
+        <div class="toggle" onclick="toggleMenu()"></div>
+
+        <ul class="navigation" id="small-menu">
+          <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+          <li><a href="#explore" onclick="toggleMenu()">Explore</a></li>
+          <li><a href="#new" onclick="toggleMenu()">What's New</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+      </header>
+      <div class="content">
+        <div class="textBox">
+          <h2>
+            Not just smart speaker.<br />It's
+            <span class="name">GeorgeBot</span>
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod illum
+            voluptatum sapiente animi, suscipit asperiores distinctio eius
+            dolorum quis vel nulla esse sint dicta explicabo dolorem quasi
+            numquam aperiam inventore?
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+        <div class="imgBox">
+          <img src="productPictures/H1.jpg" class="product" />
+        </div>
+      </div>
+      <ul class="thumb">
+        <li>
+          <img
+            src="productPictures/Thumb-1.jpg"
+            onclick="imgSlider('productPictures/H1.jpg');changeCircleColor('rgb(52,152,219)','rgba(52,152,219,0.3)')"
+          />
+        </li>
+        <li>
+          <img
+            src="productPictures/Thumb-2.jpg"
+            onclick="imgSlider('productPictures/H2.jpg');changeCircleColor('rgb(231,76,60)','rgba(231,76,60,0.3)')"
+          />
+        </li>
+        <li>
+          <img
+            src="productPictures/Thumb-3.jpg"
+            onclick="imgSlider('productPictures/H3.jpg');changeCircleColor('rgb(155,89,182)','rgba(155,89,182,0.3)')"
+          />
+        </li>
+        <li>
+          <img
+            src="productPictures/Thumb-4.jpg"
+            onclick="imgSlider('productPictures/H4.jpg');changeCircleColor('rgb(230,126,34', 'rgba(230,126,34,0.3)')"
+          />
+        </li>
+      </ul>
+      <ul class="sci">
+        <li>
+          <a href="#"><img src="socialmediaIcons/facebook.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="socialMediaIcons/twitter.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="socialMediaIcons/instagram.png" /></a>
+        </li>
+      </ul>
+    </section>
+    <section class="explore" id="explore">
+      <div class="card">
+        <div class="circle">
+          <h2>Leonardo</h2>
+          <h3>(Leo)</h3>
+        </div>
+        <div class="description">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
+            natus, eligendi vitae sequi odio totam? Sint nihil minima deleniti,
+            possimus maxime, ea est distinctio sunt perferendis tempora nesciunt
+            mollitia qui!
+          </p>
+          <div class="buttons">
+            <a href="#" class="card_chat"
+              >Let's talk <i class="fas fa-comment-alt"></i
+            ></a>
+            <a href="#"
+              >Order now <i class="fa fa-shopping-cart" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="circle">
+          <h2>Raphael</h2>
+          <h3>(Raph)</h3>
+        </div>
+        <div class="description">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
+            natus, eligendi vitae sequi odio totam? Sint nihil minima deleniti,
+            possimus maxime, ea est distinctio sunt perferendis tempora nesciunt
+            mollitia qui!
+          </p>
+          <div class="buttons">
+            <a href="#" class="card_chat"
+              >Let's talk <i class="fas fa-comment-alt"></i
+            ></a>
+            <a href="#"
+              >Order now <i class="fa fa-shopping-cart" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="circle">
+          <h2>Donatello</h2>
+          <h3>(Donny)</h3>
+        </div>
+        <div class="description">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
+            natus, eligendi vitae sequi odio totam? Sint nihil minima deleniti,
+            possimus maxime, ea est distinctio sunt perferendis tempora nesciunt
+            mollitia qui!
+          </p>
+          <div class="buttons">
+            <a href="#" class="card_chat"
+              >Let's talk <i class="fas fa-comment-alt"></i
+            ></a>
+            <a href="#"
+              >Order now <i class="fa fa-shopping-cart" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="circle">
+          <h2>Michelangelo</h2>
+          <h3>(Mikey)</h3>
+        </div>
+        <div class="description">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
+            natus, eligendi vitae sequi odio totam? Sint nihil minima deleniti,
+            possimus maxime, ea est distinctio sunt perferendis tempora nesciunt
+            mollitia qui!
+          </p>
+          <div class="buttons">
+            <a href="#" class="card_chat"
+              >Let's talk <i class="fas fa-comment-alt"></i
+            ></a>
+            <a href="#"
+              >Order now <i class="fa fa-shopping-cart" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="new" id="new">
+      <div class="new_container">
+        <div class="img_container">
+          <i class="fas fa-info-circle"></i>
+          <img class="new_img" id="hiddenImg" src="/newProduct/new.png" />
+        </div>
+        <p class="saving">
+          COMING <br />
+          SOON<span>.</span><span>.</span><span>.</span>
+        </p>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact_content">
+        <h2>Contact Us</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+          laboriosam saepe accusamus, aspernatur quia voluptates quam eaque
+          magni sit eligendi ipsum fugit eveniet veniam iure dolorem rem tenetur
+          culpa ullam.
+        </p>
+      </div>
+      <div class="contact_container">
+        <div class="contact_info">
+          <div class="info_box">
+            <div class="info_icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="info_text">
+              <h3>Address</h3>
+              <p>4675 Sugar Camp Road, Owatonna, Minnesota,<br />55060</p>
+            </div>
+          </div>
+          <div class="info_box">
+            <div class="info_icon">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <div class="info_text">
+              <h3>Phone</h3>
+              <p>+723711812312</p>
+            </div>
+          </div>
+          <div class="info_box">
+            <div class="info_icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="info_text">
+              <h3>Email</h3>
+              <p>Example@gmail.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact_form">
+          <form>
+            <h2>Send a Message</h2>
+            <div class="form_inputBox">
+              <input type="text" name="" required="required" />
+              <span>Full Name</span>
+            </div>
+            <div class="form_inputBox">
+              <input type="text" name="" required="required" />
+              <span>Email</span>
+            </div>
+            <div class="form_inputBox">
+              <textarea
+                required="required"
+                name=""
+                id=""
+                cols="30"
+                rows="3"
+              ></textarea>
+              <span>Type your Message...</span>
+            </div>
+            <div class="form_submit">
+              <p>Send <i class="fas fa-paper-plane"></i></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        class="path"
+        fill="#3498db"
+        d="M0,128L60,144C120,160,240,192,360,176C480,160,600,96,720,64C840,32,960,32,1080,32C1200,32,1320,32,1380,32L1440,32L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
+      ></path>
+    </svg>
+  </body>
+</html>

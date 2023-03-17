@@ -1,0 +1,667 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  position: relative;
+}
+
+.home {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+}
+header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+  z-index: 2;
+}
+
+header ul li {
+  list-style: none;
+  padding: 0 10px;
+}
+header ul li a {
+  display: inline-block;
+  color: #333;
+  font-weight: 400;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+header ul li a:hover {
+  color: #db3434;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content .textBox {
+  position: relative;
+  max-width: 600px;
+  z-index: 1;
+}
+
+.content .textBox h2 {
+  color: rgb(2, 2, 2);
+  font-size: 3em;
+  line-height: 1.4em;
+  font-weight: 500;
+}
+
+.content .textBox h2 span {
+  color: #000000;
+  font-family: "Otomanopee One", sans-serif;
+  font-size: 1.2em;
+  font-weight: 900;
+  transition: 0.5s;
+  text-shadow: 0px 5px 0px rgba(14, 109, 226, 0.3);
+}
+
+.content .textBox a {
+  display: inline-block;
+  margin-top: 20px;
+  background: #000000;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 40px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.content .imgBox {
+  max-width: 100%;
+}
+
+.content .imgBox .product {
+  max-width: 100%;
+  height: auto;
+}
+
+.thumb {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.thumb li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.thumb li:hover {
+  transform: translateX(-10px);
+}
+
+.sci {
+  position: absolute;
+  background: rgb(52, 152, 219);
+  top: 50%;
+
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: 0.6s;
+}
+
+.sci li {
+  list-style: none;
+}
+
+.sci li a {
+  display: inline-block;
+  margin: 5px 0;
+  transform: scale(0.6);
+  filter: invert(1);
+}
+
+.sci li a:hover {
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+svg {
+  position: absolute;
+  top: -20px;
+}
+
+.path {
+  transition: 0.6s;
+}
+
+.explore {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px 0 60px 0;
+  background: whitesmoke;
+  background-image: url("backGroundImages/logo_background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.fa-comment-alt {
+  margin-left: 3px;
+}
+
+.explore .card {
+  position: relative;
+  width: 300px;
+  height: 420px;
+  background: white;
+  margin: 20px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 2px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+}
+
+.card .active {
+  border-bottom: 1px solid black;
+}
+
+.explore .card .circle {
+  position: relative;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  background: black;
+  clip-path: circle(150px at center 0);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.card .circle h2 {
+  font-family: "Otomanopee One", sans-serif;
+  color: whitesmoke;
+  font-size: 2em;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.card .circle h3 {
+  color: whitesmoke;
+  font-size: 1em;
+}
+
+.description {
+  position: absolute;
+  bottom: 2%;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.description p {
+  color: #4d4d4d;
+  margin-bottom: 10px;
+}
+
+.description a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  background: black;
+  color: white;
+  border-radius: 40px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.description a:hover {
+  transform: scale(1.03);
+}
+
+.card .circle:hover {
+  transform: scale(1.03);
+}
+
+.card:nth-child(1) .circle,
+.card:nth-child(1) .description a:hover {
+  background: #3498db;
+}
+
+.card:nth-child(2) .circle,
+.card:nth-child(2) .description a:hover {
+  background: rgb(231, 76, 60);
+}
+
+.card:nth-child(3) .circle,
+.card:nth-child(3) .description a:hover {
+  background: rgb(155, 89, 182);
+}
+
+.card:nth-child(4) .circle,
+.card:nth-child(4) .description a:hover {
+  background: #e67e22;
+}
+
+.new {
+  background: #e2e2e2;
+}
+
+.new_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.img_container {
+  position: relative;
+}
+
+.fa-info-circle {
+  position: absolute;
+  top: 60px;
+  left: 80%;
+  font-size: 30px;
+  color: rgb(52, 152, 219);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.fa-info-circle:hover {
+  transform: scale(1.1);
+}
+
+@keyframes spin {
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.new_container p {
+  position: absolute;
+  color: white;
+  font-weight: 400;
+  animation: spin 10s ease infinite;
+  animation-fill-mode: both;
+}
+
+@keyframes blink {
+  /**
+   * At the start of the animation the dot
+   * has an opacity of .2
+   */
+  0% {
+    opacity: 0.2;
+  }
+  /**
+   * At 20% the dot is fully visible and
+   * then fades out slowly
+   */
+  20% {
+    opacity: 1;
+  }
+  /**
+   * Until it reaches an opacity of .2 and
+   * the animation can start again
+   */
+  100% {
+    opacity: 0.2;
+  }
+}
+
+.saving {
+  font-family: "Otomanopee One", sans-serif;
+  text-shadow: 0px 5px 0px rgba(14, 109, 226, 0.3);
+  text-align: center;
+  font-size: 50px;
+  line-height: 1.1em;
+}
+
+.saving span {
+  font-size: 90px;
+  color: rgb(52, 152, 219);
+  /**
+   * Use the blink animation, which is defined above
+   */
+
+  animation-name: blink;
+  /**
+   * The animation should take 1.4 seconds
+   */
+  animation-duration: 1.4s;
+  /**
+   * It will repeat itself forever
+   */
+  animation-iteration-count: infinite;
+  /**
+   * This makes sure that the starting style (opacity: .2)
+   * of the animation is applied before the animation starts.
+   * Otherwise we would see a short flash or would have
+   * to set the default styling of the dots to the same
+   * as the animation. Same applies for the ending styles.
+   */
+  animation-fill-mode: both;
+}
+
+.saving span:nth-child(3) {
+  /**
+   * Starts the animation of the third dot
+   * with a delay of .2s, otherwise all dots
+   * would animate at the same time
+   */
+  animation-delay: 0.2s;
+}
+
+.saving span:nth-child(4) {
+  /**
+   * Starts the animation of the third dot
+   * with a delay of .4s, otherwise all dots
+   * would animate at the same time
+   */
+  animation-delay: 0.3s;
+}
+
+.contact {
+  position: relative;
+  padding: 50px 100px;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact_content {
+  max-width: 900px;
+  text-align: center;
+}
+
+.contact_content h2 {
+  font-size: 36px;
+  font-weight: 500px;
+}
+.contact_content p {
+  font-weight: 300;
+}
+
+.contact_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.contact_container .contact_info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.contact_container .contact_info .info_box {
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+
+.contact_container .contact_info .info_box .info_icon {
+  min-width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 22px;
+  color: white;
+  background: black;
+  transition: 0.5s;
+}
+
+.contact_container .contact_info .info_box .info_text {
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  flex-direction: column;
+  font-weight: 300;
+}
+
+.contact_container .contact_info .info_box .info_text h3 {
+  font-weight: 500;
+  color: #db3434;
+}
+
+.contact_form {
+  width: 40%;
+  padding: 40px;
+  background: black;
+}
+
+.contact_form h2 {
+  font-size: 30px;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.contact_form .form_inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contact_form .form_inputBox input,
+.contact_form .form_inputBox textarea {
+  width: 100%;
+  padding: 5px 10px;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  outline: none;
+
+  resize: none;
+}
+
+.contact_form .form_inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 5px 10px;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.3s;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.contact_form .form_inputBox input:focus ~ span,
+.contact_form .form_inputBox input:valid ~ span,
+.contact_form .form_inputBox textarea:focus ~ span,
+.contact_form .form_inputBox textarea:valid ~ span {
+  color: rgba(235, 235, 235, 0.9);
+  font-size: 14px;
+  transform: translate(0, -32px);
+}
+
+.form_submit {
+  color: white;
+  background: rgb(52, 152, 219);
+  width: 100px;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+  margin-top: 15px;
+  text-align: center;
+}
+.form_submit p {
+  transition: 0.2s;
+}
+.form_submit:active p {
+  transform: scale(0.9);
+}
+
+@media (max-width: 992px) {
+  .home {
+    flex-direction: column;
+    padding: 20px;
+  }
+  header {
+    padding: 20px 10px;
+  }
+
+  header ul {
+    display: none;
+  }
+
+  .toggle {
+    position: absolute;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background: url(menuIcons/menu.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 11;
+  }
+
+  .toggle.active {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    right: 25px;
+    background: url(menuIcons/close.png);
+    background-size: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  header ul.navigation.active {
+    position: fixed;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    z-index: 10;
+  }
+
+  header ul li a {
+    font-size: 1.5em;
+    margin: 20px 0;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .content .textBox h2 {
+    margin-bottom: 15px;
+    line-height: 1.3em;
+  }
+  .content .textBox {
+    max-width: 100%;
+  }
+  .content .imgBox {
+    max-width: 100%;
+    padding: 0;
+    margin-top: 0;
+  }
+  .thumb {
+    transform: scale(0.8);
+  }
+
+  .contact {
+    padding: 50px;
+  }
+
+  .contact_container {
+    flex-direction: column-reverse;
+  }
+
+  .contact_container .contact_info {
+    margin-top: 30px;
+
+    width: 100%;
+  }
+
+  .contact_container .contact_form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  svg {
+    top: -10px;
+  }
+  .content .textBox h2 {
+    font-size: 2em;
+  }
+  .explore .card .circle {
+    clip-path: circle(130px at center 0);
+  }
+
+  .description {
+    padding-bottom: 0;
+    bottom: 5%;
+  }
+  .description a {
+    margin-bottom: 5px;
+    scale: 0.9;
+  }
+  .description p {
+    font-size: smaller;
+    padding: 20px 20px 0px 20px;
+  }
+
+  .img_container img {
+    width: 100%;
+  }
+  .new_container p {
+    font-size: 35px;
+  }
+}
