@@ -5,7 +5,7 @@ Responsive landing page for a smart speaker concept GeorgeBot
 ## Live demo
 https://hitchhiker98.github.io/GeorgeBot_Landing_Page/#
 
-<a href="https://hitchhiker98.github.io/GeorgeBot_Landing_Page/#"><img src="https://imgur.com/GN4wbZA" width="350" title="landing page"></a>
+<a href="https://hitchhiker98.github.io/GeorgeBot_Landing_Page/#" target="_blank"><img src="https://i.imgur.com/GN4wbZA.jpg" width="350" title="landing page"></a>
 
 
 ## Usage
